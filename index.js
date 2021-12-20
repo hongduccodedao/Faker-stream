@@ -5,7 +5,7 @@ const { Client } = require('discord.js-selfbot-v11')
 const client = new Client();
 
 client.on('ready', () => { 
-  client.user.setActivity("Subscribe!", {type: "STREAMING", url: "https://twitch.tv/SealedSaucer"})
+  client.user.setActivity("Code Bao-Chan Bot!", {type: "STREAMING", url: "https://twitch.tv/hongducodedao"})
    console.log(`${client.user.username} Successfully Logged in!`)
 })
 
