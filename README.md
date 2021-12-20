@@ -8,17 +8,18 @@ The [index.js](https://github.com/hongduccodedao/Faker-stream/blob/main/index.js
 </br>
 
 ```js
+const keepAlive = require("./server")
 const dotenv = require('dotenv');
 const TOKEN = (process.env.TOKEN);
 const { Client } = require('discord.js-selfbot-v11')
 const client = new Client();
 
 client.on('ready', () => { 
-  client.user.setActivity("Subscribe!", {type: "STREAMING", url: "https://twitch.tv/ninja"})
+  client.user.setActivity("Code Bao-Chan Bot!", {type: "STREAMING", url: "https://twitch.tv/hongducodedao"})
    console.log(`${client.user.username} Successfully Logged in!`)
 })
 
-client.login(TOKEN);
+keepAlive()
 ```
 
 **DO NOT GIVE YOUR TOKEN TO OTHERS!**
